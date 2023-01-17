@@ -13,24 +13,25 @@ const session = require('express-session');
 const MongoContainer = require('./models/containers/Mongodb.container')
 const os = require('os')
 const cluster = require('cluster');
+const { cpus } = require('os')
 const {
   logger,
-  consoleLogger
+  consoleLogger,
+  infoLogger
 } = require('./logger/logger')
 
 const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2), {
     alias: {
         p: "port",
-        m: "mode"
     },
     default: {
         port: 8080,
-        mode: "Fork"
     }
 })
 
 const PORT = argv.port
+const clusterMode = process.argv[4] == "CLUSTER";
 
 /* const PORT = process.env.PORT || 8080; */// definimos puerto
 const app = express();//definimos constante para nuestro servidor
@@ -68,28 +69,46 @@ app.use(passport.session());
 app.set('view engine', 'ejs');
 
 //Routes
+
+app.get('/datos', async (req, res) => {
+  consoleLogger.info("peticion a /datos, metodo get")
+  const html = `Puerto: ${PORT}`
+  res.send(html)
+});
+
 app.use(routes)
 
-if (argv.mode === 'Cluster' && cluster.isPrimary) {
-  const cpus = os.cpus().length;
-  for (let i = 0; i < cpus; i++) {
+if (!clusterMode){
+  infoLogger.info("Modo Fork");
+}
+
+if (clusterMode && cluster.isPrimary) {
+  consoleLogger.info('Modo CLUSTER');
+  const NUM_WORKERS = os.cpus().length = os.cpus().length;
+  for (let i = 0; i < NUM_WORKERS; i++) {
       cluster.fork();
   }
+  cluster.on("exit", worker => {
+    consoleLogger("Worker", worker.process.pid, "died", new Date().toLocaleDateString())
+})
+cluster.fork()
 } else {
-    /* const ProductsModel = new Products()
-    let messages = new Messages('messages', dbConfig.sqlite) */
+  app.listen(PORT, () => {
+    logger.trace(`Servidor escuchando en puerto: ${PORT}`);
+    infoLogger.info(`PID WORKER ${process.pid}`)
+});
 
-    const serverConnected = httpServer.listen(PORT, () => {
+/*     const serverConnected = httpServer.listen(PORT, () => {
       MongoContainer.connect()
             .then(() => {
                 console.log('Connected to DB!');
-                console.log(process.pid, `==> 🚀Server active and runing on port: ${PORT}`);
+                console.log(process.pid, `==> 🚀 Server active and runing on port: ${PORT}`);
             });
     })
 
     serverConnected.on('error', (error) => {
         console.log(error.message)
-    })
+    }) */
 }
 
 

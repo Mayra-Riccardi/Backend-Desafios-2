@@ -9,6 +9,7 @@ const {
   consoleLogger,
   errorLogger,
 } = require("../logger/logger");
+const infoRoutes = require('./api/info/info');
 
 
 const router = express.Router();
@@ -16,6 +17,7 @@ const router = express.Router();
 
 //Routes
 router.use('/api', apiRoutes);
+router.use('/info', infoRoutes)
 
 router.get('/', async(req, res) => {
   consoleLogger.info('peticion a / get')
@@ -31,7 +33,7 @@ router.get('/register', async(req, res) => {
   res.sendFile('signup.html', {root: 'public'})
 })
 
-router.get('/info', (req, res) => {
+/* router.get('/info', (req, res) => {
   consoleLogger.info('peticion a /info, get')
   let data = {
     argv: process.argv.slice(2),
@@ -68,7 +70,7 @@ router.get('/randoms', (req, res) => {
   randomNums.on('message', (data) => {
       res.json(data)
   })
-})//lo mismo que el metodo anterior! modularizar!!
+}) */
 
 router.get('/profile', auth, async (req, res) => {
   consoleLogger.info('peticion a /profile, get');
@@ -78,7 +80,7 @@ router.get('/profile', auth, async (req, res) => {
 
 router.get('/logout', auth, (req, res, next) => {
   consoleLogger.info('peticion a /logout, get');
-  onsoleLogger.info('usuario deslogueado');
+  consoleLogger.info('usuario deslogueado');
   req.logOut(() => {
     console.log('User logued out');
     res.redirect('/');

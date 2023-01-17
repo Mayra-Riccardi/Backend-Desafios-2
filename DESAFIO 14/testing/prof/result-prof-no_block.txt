@@ -1,0 +1,1117 @@
+Statistical profiling result from block.log, (1914 ticks, 31 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     63    3.3%          /usr/lib/system/libsystem_pthread.dylib
+     51    2.7%          /usr/lib/system/libsystem_c.dylib
+     35    1.8%          /usr/lib/libc++.1.dylib
+     27    1.4%          /usr/lib/system/libsystem_malloc.dylib
+      9    0.5%          /usr/lib/system/libsystem_platform.dylib
+      1    0.1%          /usr/lib/system/libsystem_kernel.dylib
+      1    0.1%          /usr/lib/system/libdyld.dylib
+      1    0.1%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     11    0.6%    0.6%  LazyCompile: *resolve node:path:1091:10
+      3    0.2%    0.2%  LazyCompile: *normalizeString node:path:66:25
+      1    0.1%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.1%    0.1%  RegExp: \.\d+
+      1    0.1%    0.1%  LazyCompile: *dirname node:path:1275:10
+      1    0.1%    0.1%  LazyCompile: *basename node:path:1306:11
+      1    0.1%    0.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:676:37
+      1    0.1%    0.1%  Function: ^restore /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:631:17
+      1    0.1%    0.1%  Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1    0.1%    0.1%  Function: ^pushAsyncContext node:internal/async_hooks:539:26
+      1    0.1%    0.1%  Function: ^normalizeString node:path:66:25
+      1    0.1%    0.1%  Function: ^nextTick node:internal/process/task_queues:103:18
+      1    0.1%    0.1%  Function: ^next /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:177:16
+      1    0.1%    0.1%  Function: ^matchKnownFields node:_http_incoming:279:26
+      1    0.1%    0.1%  Function: ^isEncoding node:buffer:535:40
+      1    0.1%    0.1%  Function: ^hasHooks node:internal/async_hooks:470:18
+      1    0.1%    0.1%  Function: ^handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/application.js:165:29
+      1    0.1%    0.1%  Function: ^getTimerDuration node:internal/timers:388:26
+      1    0.1%    0.1%  Function: ^generate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:363:22
+      1    0.1%    0.1%  Function: ^clearTimeout node:timers:185:22
+      1    0.1%    0.1%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:247:30
+      1    0.1%    0.1%  Function: ^addListener node:events:604:58
+      1    0.1%    0.1%  Function: ^_storeHeader node:_http_outgoing:420:22
+      1    0.1%    0.1%  Function: ^IncomingMessage node:_http_incoming:53:25
+      1    0.1%    0.1%  Function: ^Hash node:internal/crypto/hash:62:14
+      1    0.1%    0.1%  Function: ^<anonymous> node:internal/fs/utils:692:40
+      1    0.1%    0.1%  Function: ^<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/Pool.js:457:41
+
+ [C++]:
+   ticks  total  nonlib   name
+    827   43.2%   47.9%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+    389   20.3%   22.5%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    238   12.4%   13.8%  T _posix_spawnattr_setflags
+     79    4.1%    4.6%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     37    1.9%    2.1%  T _sigprocmask
+     11    0.6%    0.6%  T _task_get_exception_ports
+      9    0.5%    0.5%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      8    0.4%    0.5%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      8    0.4%    0.5%  T __kernelrpc_mach_port_insert_right_trap
+      6    0.3%    0.3%  T _mach_port_insert_member
+      5    0.3%    0.3%  t ___pfz_setup
+      5    0.3%    0.3%  T ___bsdthread_terminate
+      4    0.2%    0.2%  T _os_unfair_recursive_lock_lock_with_options
+      3    0.2%    0.2%  t __os_nospin_lock_unlock_slow
+      3    0.2%    0.2%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.2%    0.2%  T ___libplatform_init
+      2    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t __os_once_gate_wait
+      2    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      2    0.1%    0.1%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T _mach_timebase_info_trap
+      1    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      1    0.1%    0.1%  t non-virtual thunk to v8::internal::PointersUpdatingVisitor::~PointersUpdatingVisitor()
+      1    0.1%    0.1%  t node::Buffer::(anonymous namespace)::EncodeUtf8String(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _semaphore_signal
+      1    0.1%    0.1%  T _mach_port_insert_right
+      1    0.1%    0.1%  T __simple_dprintf
+
+ [Summary]:
+   ticks  total  nonlib   name
+     39    2.0%    2.3%  JavaScript
+   1656   86.5%   95.9%  C++
+     64    3.3%    3.7%  GC
+    188    9.8%          Shared libraries
+     31    1.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    793   58.4%   41.4%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+    389   28.6%   20.3%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     79    5.8%    4.1%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    2.1%    1.5%  T _sigprocmask
+     11    0.8%    0.6%  T _task_get_exception_ports
+      9    0.7%    0.5%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      8    0.6%    0.4%  T __kernelrpc_mach_port_insert_right_trap
+      7    0.5%    0.4%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      4    0.3%    0.2%  t ___pfz_setup
+      4    0.3%    0.2%  T _os_unfair_recursive_lock_lock_with_options
+      3    0.2%    0.2%  T node::binding::DLOpen(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.2%    0.2%  T ___libplatform_init
+      2    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+      2    0.1%    0.1%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.1%  T _mach_port_insert_member
+      1    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::__unordered_map_hasher<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, node::FastStringKey::Hash, true>, std::__1::__unordered_map_equal<node::FastStringKey, std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> >, std::__1::equal_to<node::FastStringKey>, true>, std::__1::allocator<std::__1::__hash_value_type<node::FastStringKey, node::BaseObjectPtrImpl<node::BaseObject, false> > > >::find<node::FastStringKey>(node::FastStringKey const&)
+      1    0.1%    0.1%  t node::Buffer::(anonymous namespace)::EncodeUtf8String(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  t __os_once_gate_wait
+      1    0.1%    0.1%  t __os_nospin_lock_lock_slow
+      1    0.1%    0.1%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _semaphore_signal
+      1    0.1%    0.1%  T _mach_port_insert_right
+      1    0.1%    0.1%  T __simple_dprintf
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    827   43.2%  T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+    152   18.4%    Function: ^readSync node:fs:705:18
+    152  100.0%      Function: ^tryReadSync node:fs:444:21
+    152  100.0%        Function: ^readFileSync node:fs:465:22
+    147   96.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    139   94.6%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      8    5.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      4    2.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      4  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     46    5.6%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      7   15.2%      T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      4   57.1%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      3   75.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      3  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1   25.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1   14.3%        LazyCompile: ~done /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/operations/create_collection.js:79:26
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:302:27
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:211:101
+      1   14.3%        LazyCompile: ~HostAddress /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/utils.js:871:16
+      1  100.0%          Function: ^fromString /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/utils.js:929:22
+      1  100.0%            LazyCompile: ~get hostAddress /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/server_description.js:65:20
+      1   14.3%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      4    8.7%      Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      4  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      4  100.0%          Function: ^require node:internal/modules/cjs/helpers:102:31
+      1   25.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/deps.js:1:1
+      1   25.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/lodash/_baseClone.js:1:1
+      1   25.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@aws-sdk/middleware-serde/dist-cjs/index.js:1:1
+      1   25.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      4    8.7%      Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      4  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      3    6.5%      LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:396:36
+      3  100.0%        LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      3  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      3  100.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:490:30
+      2    4.3%      LazyCompile: ~asString /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/date-format/lib/index.js:29:18
+      2  100.0%        LazyCompile: ~timestampLevelAndCategory /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/layouts.js:42:35
+      2  100.0%          LazyCompile: ~colouredLayout /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/layouts.js:73:24
+      2  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/console.js:5:10
+      2    4.3%      Function: ^findLongestRegisteredExtension node:internal/modules/cjs/loader:460:40
+      2  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1    2.2%      LazyCompile: ~parse /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bytes/index.js:141:15
+      1  100.0%        LazyCompile: ~json /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/body-parser/lib/types/json.js:50:15
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1    2.2%      LazyCompile: ~match /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%        LazyCompile: ~matchLayer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:583:20
+      1  100.0%          LazyCompile: ~next /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:136:31
+      1    2.2%      LazyCompile: ~eval_template /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:234:23
+      1  100.0%        LazyCompile: ~module.exports.evaluate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:277:35
+      1  100.0%          LazyCompile: ~exports.find /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/sqlite3/lib/sqlite3-binding.js:1:1
+      1    2.2%      LazyCompile: ~deserializeObject /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserialize /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/bson.js:161:21
+      1  100.0%            LazyCompile: ~parse /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1    2.2%      LazyCompile: ~check node:tls:177:15
+      1  100.0%        Function: ^wildcard node:tls:313:22
+      1  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%            LazyCompile: ~checkServerIdentity node:tls:280:59
+      1    2.2%      LazyCompile: ~ServerDescription /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:35:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:61:55
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:205:52
+      1    2.2%      LazyCompile: ~MongoStore /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%        LazyCompile: ~create /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1    2.2%      LazyCompile: ~Mime.lookup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mime/mime.js:69:33
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mime/mime.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    2.2%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%        LazyCompile: ~prepareHandshakeDocument /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%          LazyCompile: ~performInitialHandshake /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1    2.2%      LazyCompile: *stat node:internal/modules/cjs/loader:158:14
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.2%      LazyCompile: *realpathSync node:fs:2474:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryPackage node:internal/modules/cjs/loader:385:20
+      1    2.2%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%        Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.2%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.2%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    2.2%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/node_modules/debug/src/node.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    2.2%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/lodash/_baseIsNative.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    2.2%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    2.2%      Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1    2.2%      Function: ^read node:internal/modules/package_json_reader:16:14
+      1  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.2%      Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.2%      Function: ^match /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%        Function: ^matchLayer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:583:20
+      1  100.0%          Function: ^next /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:136:31
+      1    2.2%      Function: ^getESMFacade node:internal/bootstrap/loaders:281:15
+      1  100.0%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1  100.0%          Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.2%      Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    2.2%      Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%          Function: ^createPool node:buffer:155:20
+      1  100.0%            Function: ^allocate node:buffer:403:18
+     36    4.4%    LazyCompile: *compileFunction node:vm:316:25
+     36  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+     36  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+     36  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     27   75.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      9   25.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+     33    4.0%    Function: ^read node:internal/modules/package_json_reader:16:14
+     27   81.8%      Function: ^readPackage node:internal/modules/cjs/loader:326:21
+     26   96.3%        Function: ^resolveExports node:internal/modules/cjs/loader:519:24
+     26  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+     23   88.5%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      3   11.5%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1    3.7%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:519:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      6   18.2%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      4   66.7%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      2   33.3%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      2  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+     19    2.3%    LazyCompile: ~configSecureContext node:internal/tls/secure-context:124:29
+     19  100.0%      LazyCompile: ~createSecureContext node:_tls_common:99:29
+     19  100.0%        LazyCompile: ~connect node:_tls_wrap:1605:35
+     19  100.0%          LazyCompile: ~makeConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+     19  100.0%            LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:30:17
+     19    2.3%    Function: ^openSync node:fs:591:18
+     19  100.0%      Function: ^readFileSync node:fs:465:22
+     19  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     18   94.7%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     18  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    5.3%          LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      9    1.1%    Function: ^stat node:internal/modules/cjs/loader:158:14
+      5   55.6%      Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      5  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      5  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      5  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4   44.4%      Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      4  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      4  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+
+    389   20.3%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    387   99.5%    Function: ^compileFunction node:vm:316:25
+    383   99.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+    382   99.7%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+    372   97.4%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    372  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+     10    2.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     10  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      4    1.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1073:18
+      4  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      4  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      2   50.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      2   50.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+
+    238   12.4%  T _posix_spawnattr_setflags
+
+     79    4.1%  T node::builtins::BuiltinLoader::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     51   64.6%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     39   76.5%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      8   20.5%        Function: ~<anonymous> node:http2:1:1
+      8  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      8  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      6   15.4%        Function: ~<anonymous> node:http:1:1
+      6  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      6  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      3    7.7%        Function: ~<anonymous> node:tls:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3    7.7%        Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3    7.7%        Function: ~<anonymous> node:_http_client:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2    5.1%        LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      2  100.0%          LazyCompile: ~get node:crypto:369:8
+      2  100.0%            T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      2    5.1%        Function: ~<anonymous> node:child_process:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    2.6%        LazyCompile: ~lazyLoadStreams node:fs:2907:25
+      1  100.0%          LazyCompile: ~get ReadStream node:fs:3050:17
+      1  100.0%            T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1    2.6%        Function: ~<anonymous> node:internal/http2/core:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:internal/http2/compat:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:https:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    2.6%        Function: ~<anonymous> node:dns:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    2.6%        Function: ~<anonymous> node:cluster:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    2.6%        Function: ~<anonymous> node:assert:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1    2.6%        Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%        Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+     10   19.6%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+     10  100.0%        Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+     10  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+     10  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      2    3.9%      LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1   50.0%        LazyCompile: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1053:36
+      1   50.0%        Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+     26   32.9%    Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5   19.2%      Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5  100.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      5  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3   11.5%      LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      3  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      3  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      3   11.5%      Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      3  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2    7.7%      Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2    7.7%      Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2    7.7%      Function: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.8%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.8%      LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.8%      LazyCompile: ~get BlockList node:net:1980:16
+      1  100.0%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1    3.8%      Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1    3.8%      Function: ~<anonymous> node:internal/readline/interface:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.8%      Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.8%      Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.8%      Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.8%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2    2.5%    Function: ~<anonymous> node:internal/main/run_main_module:1:1
+
+     63    3.3%  /usr/lib/system/libsystem_pthread.dylib
+     27   42.9%    LazyCompile: *compileFunction node:vm:316:25
+     27  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+     27  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+     27  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     19   70.4%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      8   29.6%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      4    6.3%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1   25.0%      LazyCompile: ~setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/categories.js:144:15
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/configuration.js:51:21
+      1  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%            LazyCompile: ~configure /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/configuration.js:42:19
+      1   25.0%      LazyCompile: ~module.exports /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/minimist/index.js:1:27
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/routers/api/info/info.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1   25.0%      LazyCompile: ~getStack /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/depd/index.js:381:19
+      1  100.0%        LazyCompile: ~depd /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/depd/index.js:103:15
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/body-parser/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1   25.0%      LazyCompile: ~_addLongStackTrace /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mysql/lib/protocol/sequences/Sequence.js:102:68
+      1  100.0%        LazyCompile: ~Sequence.end /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mysql/lib/protocol/sequences/Sequence.js:57:34
+      1  100.0%          LazyCompile: ~Protocol.handleNetworkError /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mysql/lib/protocol/Protocol.js:364:49
+      1  100.0%            LazyCompile: ~Connection._handleNetworkError /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mysql/lib/Connection.js:417:52
+      3    4.8%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      3  100.0%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      3  100.0%        LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      3  100.0%          LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      3  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.2%    LazyCompile: ~realpathSync node:fs:2474:22
+      2  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      2    3.2%    LazyCompile: ~createAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:74:24
+      2  100.0%      LazyCompile: ~getAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:59:21
+      2  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:139:41
+      2  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      2  100.0%            LazyCompile: ~setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:128:15
+      1    1.6%    LazyCompile: ~utf8DecodeWithoutBOM /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/encoding.js:9:30
+      1  100.0%      LazyCompile: ~parseUrlencoded /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/urlencoded.js:10:25
+      1  100.0%        LazyCompile: ~parseUrlencodedString /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/urlencoded.js:41:31
+      1  100.0%          LazyCompile: ~URLSearchParamsImpl /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/URLSearchParams-impl.js:5:14
+      1  100.0%            LazyCompile: ~exports.setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/URLSearchParams.js:62:17
+      1    1.6%    LazyCompile: ~update /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:131:11
+      1  100.0%      LazyCompile: ~serverUpdateHandler /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:321:24
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:481:53
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:61:55
+      1    1.6%    LazyCompile: ~shouldSave /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:440:24
+      1  100.0%      LazyCompile: ~end /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:250:27
+      1  100.0%        LazyCompile: ~send /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/response.js:111:25
+      1  100.0%          LazyCompile: ~json /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/response.js:250:25
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/routers/api/info/info.js:28:17
+      1    1.6%    LazyCompile: ~setupFetch node:internal/process/pre_execution:198:20
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%    LazyCompile: ~serializeInto /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/parser/serializer.js:553:23
+      1  100.0%      LazyCompile: ~serialize /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/bson.js:110:19
+      1  100.0%        LazyCompile: ~serializeBson /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:379:18
+      1  100.0%          LazyCompile: ~makeDocumentSegment /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:371:24
+      1  100.0%            LazyCompile: ~toBin /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:345:10
+      1    1.6%    LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%    LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+      1  100.0%      LazyCompile: ~HI /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:238:12
+      1  100.0%        LazyCompile: ~continueScramConversation /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%            LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    1.6%    LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%    LazyCompile: ~module.exports /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/isMongooseObject.js:13:26
+      1  100.0%      LazyCompile: ~clone /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/clone.js:29:15
+      1  100.0%        LazyCompile: ~Schema.path /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/schema.js:895:33
+      1  100.0%          LazyCompile: ~add /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/schema.js:581:36
+      1  100.0%            LazyCompile: ~Schema /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/schema.js:96:16
+      1    1.6%    LazyCompile: ~lookup node:dns:140:16
+      1  100.0%      LazyCompile: ~<anonymous> node:net:1185:61
+      1  100.0%        LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%          LazyCompile: ~lookupAndConnect node:net:1129:26
+      1  100.0%            LazyCompile: ~Socket.connect node:net:1061:36
+      1    1.6%    LazyCompile: ~isIP node:internal/net:45:14
+      1  100.0%      LazyCompile: ~parseSslOptions /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:237:25
+      1  100.0%        LazyCompile: ~makeConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%          LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%            LazyCompile: ~checkServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1    1.6%    LazyCompile: ~immediate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:574:34
+      1  100.0%        LazyCompile: ~promiseOrCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:567:18
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1470:52
+      1    1.6%    LazyCompile: ~handleOperationResult /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:327:42
+      1  100.0%      LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1    1.6%    LazyCompile: ~check node:internal/crypto/pbkdf2:90:15
+      1  100.0%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
+      1  100.0%        LazyCompile: ~HI /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:238:12
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.6%    LazyCompile: ~_shouldBufferCommands /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:596:76
+      1  100.0%      LazyCompile: ~_shouldBufferCommands /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/collection.js:271:76
+      1  100.0%        LazyCompile: ~NativeCollection.<computed> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:76:43
+      1  100.0%          LazyCompile: ~create /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1856:18
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1846:21
+      1    1.6%    LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%        LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%    LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1218:39
+      1  100.0%      Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    1.6%    LazyCompile: ~Hmac node:internal/crypto/hash:131:14
+      1  100.0%      LazyCompile: ~createHmac node:crypto:164:20
+      1  100.0%        LazyCompile: ~HMAC /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:225:14
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.6%    LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%      LazyCompile: ~Socket node:net:329:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1    1.6%    LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%      Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:102:31
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/deps.js:1:1
+      1    1.6%    Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%      Function: ^resolveExports node:internal/modules/cjs/loader:519:24
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    1.6%    Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    1.6%    Function: ^emit node:events:460:44
+      1  100.0%      LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+
+     51    2.7%  /usr/lib/system/libsystem_c.dylib
+     23   45.1%    LazyCompile: *compileFunction node:vm:316:25
+     23  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+     23  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+     23  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     14   60.9%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      9   39.1%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      2    3.9%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1   50.0%      LazyCompile: ~getStack /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/depd/index.js:381:19
+      1  100.0%        LazyCompile: ~depd /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/depd/index.js:103:15
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/body-parser/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1   50.0%      LazyCompile: ~bindDefaultResolver node:internal/dns/utils:250:29
+      1  100.0%        Function: ~<anonymous> node:dns:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      2    3.9%    LazyCompile: ~assertEncoding node:internal/fs/utils:156:24
+      2  100.0%      LazyCompile: ~getOptions node:internal/fs/utils:319:20
+      2  100.0%        LazyCompile: ~readFileSync node:fs:465:22
+      2  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      2  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      2    3.9%    Function: ^handleErrorFromBinding node:internal/fs/utils:344:32
+      2  100.0%      Function: ^readSync node:fs:705:18
+      2  100.0%        Function: ^tryReadSync node:fs:444:21
+      2  100.0%          Function: ^readFileSync node:fs:465:22
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    2.0%    LazyCompile: ~validate_config /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%      LazyCompile: ~exports.find /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    2.0%    LazyCompile: ~urlParse node:url:152:18
+      1  100.0%      LazyCompile: ~validate_config /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%        LazyCompile: ~exports.find /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    2.0%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%        LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%          LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.0%    LazyCompile: ~setupListenHandle node:net:1438:27
+      1  100.0%      LazyCompile: ~listenInCluster node:net:1523:25
+      1  100.0%        LazyCompile: ~Server.listen node:net:1566:35
+      1  100.0%          LazyCompile: ~listen /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/application.js:633:29
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1    2.0%    LazyCompile: ~serverUpdateHandler /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%        Function: ^emit node:events:460:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/server.js:61:55
+      1  100.0%            Function: ^emit node:events:460:44
+      1    2.0%    LazyCompile: ~requestCheck /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/server.js:140:17
+      1  100.0%      LazyCompile: ~scheduleServerCheck /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:610:58
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.0%    LazyCompile: ~randomBytesSync /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/random-bytes/index.js:72:25
+      1  100.0%      LazyCompile: ~uidSync /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/uid-safe/index.js:75:18
+      1  100.0%        LazyCompile: ~generateSessionId /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:518:27
+      1  100.0%          LazyCompile: ~store.generate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:158:28
+      1  100.0%            LazyCompile: ~generate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:363:22
+      1    2.0%    LazyCompile: ~onceWrapper node:events:622:21
+      1  100.0%      Function: ^emit node:events:460:44
+      1  100.0%        LazyCompile: ~afterConnect node:net:1253:22
+      1    2.0%    LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%      LazyCompile: ~immediate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/immediate.js:14:36
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:574:34
+      1  100.0%          LazyCompile: ~promiseOrCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:567:18
+      1    2.0%    LazyCompile: ~createAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:74:24
+      1  100.0%      LazyCompile: ~getAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:59:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:139:41
+      1  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%            LazyCompile: ~setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:128:15
+      1    2.0%    LazyCompile: ~create /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1856:18
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1846:21
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.0%    LazyCompile: ~configure /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/file.js:135:19
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:113:5
+      1  100.0%        LazyCompile: ~onlyOnMaster /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/clustering.js:87:17
+      1  100.0%          LazyCompile: ~createAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:74:24
+      1  100.0%            LazyCompile: ~getAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:59:21
+      1    2.0%    LazyCompile: ~clearBuffer node:internal/streams/writable:532:21
+      1  100.0%      LazyCompile: ~<anonymous> node:internal/streams/writable:260:31
+      1  100.0%        LazyCompile: ~onceWrapper node:events:622:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~emitConstructNT node:internal/streams/destroy:281:25
+      1    2.0%    LazyCompile: ~Socket.resume node:net:727:35
+      1  100.0%      Function: ^Readable.on node:internal/streams/readable:886:33
+      1  100.0%        LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mysql/lib/Connection.js:64:48
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/dialects/mysql/index.js:61:24
+      1  100.0%            T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1    2.0%    LazyCompile: ~Socket._read node:net:678:34
+      1  100.0%      LazyCompile: ~<anonymous> node:net:683:26
+      1  100.0%        LazyCompile: ~onceWrapper node:events:622:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~afterConnect node:net:1253:22
+      1    2.0%    LazyCompile: ~Server /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/server.js:29:16
+      1  100.0%      LazyCompile: ~createAndConnectServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:474:32
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:173:57
+      1  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%            LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:154:12
+      1    2.0%    LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%      LazyCompile: ~Socket node:net:329:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1    2.0%    LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1846:21
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.0%    LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%      LazyCompile: ~callback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1  100.0%        LazyCompile: ~connectHandler /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:313:28
+      1  100.0%          Function: ^onceWrapper node:events:622:21
+      1  100.0%            Function: ^emit node:events:460:44
+      1    2.0%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/streamroller/node_modules/debug/src/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.0%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mquery/node_modules/debug/src/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.0%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/schemas/User.schema.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+
+     37    1.9%  T _sigprocmask
+      3    8.1%    LazyCompile: *compileFunction node:vm:316:25
+      3  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+      3  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      2   66.7%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1   33.3%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      2    5.4%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1   50.0%      LazyCompile: ~set maxAge /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%        T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%          LazyCompile: ~Cookie /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/session/cookie.js:25:46
+      1  100.0%            LazyCompile: ~store.generate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:158:28
+      1   50.0%      LazyCompile: ~pathtoRegexp /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%        LazyCompile: ~Layer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%          LazyCompile: ~route /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:502:29
+      1  100.0%            LazyCompile: ~proto.<computed> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:519:27
+      1    2.7%    LazyCompile: ~setOption /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/connection_string.js:407:19
+      1  100.0%      LazyCompile: ~parseOptions /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%        LazyCompile: ~MongoClient /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:43:16
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:234:43
+      1  100.0%            LazyCompile: ~maybeCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/utils.js:336:23
+      1    2.7%    LazyCompile: ~resolver node:internal/dns/promises:293:18
+      1  100.0%      LazyCompile: ~createResolverClass node:internal/dns/utils:286:29
+      1  100.0%        Function: ~<anonymous> node:internal/dns/promises:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.7%    LazyCompile: ~redefineProperties /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/knex-builder/make-knex.js:235:28
+      1  100.0%      LazyCompile: ~makeKnex /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/knex-builder/make-knex.js:97:18
+      1  100.0%        LazyCompile: ~knex /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/knex-builder/Knex.js:13:14
+      1  100.0%          LazyCompile: ~Products /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/data.js:4:14
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1    2.7%    LazyCompile: ~push node:internal/fixed_queue:75:7
+      1  100.0%      LazyCompile: ~push node:internal/fixed_queue:99:7
+      1  100.0%        LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%          LazyCompile: ~processWaitQueue /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:548:26
+      1  100.0%            LazyCompile: ~selectServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:254:17
+      1    2.7%    LazyCompile: ~processIncomingData /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%      LazyCompile: ~_write /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%        Function: ^writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%          Function: ^_write node:internal/streams/writable:286:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+      1    2.7%    LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.7%    LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1  100.0%        Function: ^emit node:events:460:44
+      1  100.0%          LazyCompile: ~processIncomingData /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%            LazyCompile: ~_write /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1    2.7%    LazyCompile: ~lookupAndConnect node:net:1129:26
+      1  100.0%      LazyCompile: ~Socket.connect node:net:1061:36
+      1  100.0%        LazyCompile: ~connect node:_tls_wrap:1605:35
+      1  100.0%          LazyCompile: ~makeConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%            LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    2.7%    LazyCompile: ~jsonParser /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/body-parser/lib/types/json.js:98:30
+      1  100.0%      LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~process_params /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/index.js:338:47
+      1    2.7%    LazyCompile: ~initializePool /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/client.js:274:17
+      1  100.0%      LazyCompile: ~Client /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/client.js:41:14
+      1  100.0%        LazyCompile: ~Client_MySQL /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/dialects/mysql/index.js:21:1
+      1  100.0%          LazyCompile: ~knex /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/knex-builder/Knex.js:13:14
+      1  100.0%            LazyCompile: ~Products /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/data.js:4:14
+      1    2.7%    LazyCompile: ~duration /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/utils.js:22:18
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/Pool.js:161:27
+      1  100.0%        T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%          LazyCompile: ~check /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/Pool.js:155:10
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/Pool.js:457:41
+      1    2.7%    LazyCompile: ~checkIn /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:191:12
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:302:27
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:211:101
+      1  100.0%          LazyCompile: ~handleOperationResult /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:327:42
+      1  100.0%            LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1    2.7%    LazyCompile: ~_ensureIndexes /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1805:24
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1765:52
+      1  100.0%        LazyCompile: ~promiseOrCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%          LazyCompile: ~Mongoose._promiseOrCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/index.js:1264:49
+      1  100.0%            LazyCompile: ~ensureIndexes /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1755:45
+      1    2.7%    LazyCompile: ~PendingOperation /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/PendingOperation.js:6:16
+      1  100.0%      LazyCompile: ~acquire /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/tarn/dist/Pool.js:110:12
+      1  100.0%        LazyCompile: ~acquireConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/client.js:296:26
+      1  100.0%          LazyCompile: ~ensureConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/runner.js:275:25
+      1  100.0%            LazyCompile: ~run /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/runner.js:27:12
+      1    2.7%    LazyCompile: ~Mongoose._model /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/index.js:612:37
+      1  100.0%      LazyCompile: ~Mongoose.model /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/index.js:541:36
+      1  100.0%        LazyCompile: ~MongoContainer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/containers/Mongodb.container.js:8:14
+      1  100.0%          LazyCompile: ~UsersDao /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/daos/Users.daos.js:10:16
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/middlewares/passport.js:1:1
+      1    2.7%    LazyCompile: ~Client /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/client.js:41:14
+      1  100.0%      LazyCompile: ~Client_MySQL /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/dialects/mysql/index.js:21:1
+      1  100.0%        LazyCompile: ~knex /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/knex-builder/Knex.js:13:14
+      1  100.0%          LazyCompile: ~Products /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/data.js:4:14
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1    2.7%    LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:1345:41
+      1  100.0%      T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.7%    Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.7%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/supports-color/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.7%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.7%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/lodash/_escapeHtmlChar.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    2.7%    Function: ^onceWrapper node:events:622:21
+      1  100.0%      Function: ^emit node:events:460:44
+      1  100.0%        LazyCompile: ~Socket._onTimeout node:net:548:39
+      1  100.0%          Function: ^listOnTimeout node:internal/timers:512:25
+      1  100.0%            Function: ^processTimers node:internal/timers:492:25
+      1    2.7%    Function: ^<anonymous> node:internal/validators:401:42
+      1  100.0%      Function: ^compileFunction node:vm:316:25
+      1  100.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+
+     35    1.8%  /usr/lib/libc++.1.dylib
+     13   37.1%    LazyCompile: *compileFunction node:vm:316:25
+     13  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+     13  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+     13  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      8   61.5%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      5   38.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      2    5.7%    LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      2  100.0%      LazyCompile: ~makeConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:256:24
+      2  100.0%        LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:30:17
+      2  100.0%          LazyCompile: ~checkServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      2  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      2    5.7%    LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/routers/api/info/info.js:28:17
+      1   50.0%      LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~next /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/route.js:116:16
+      1  100.0%          LazyCompile: ~dispatch /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/route.js:98:45
+      1  100.0%            LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1   50.0%      Function: ^handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~next /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/route.js:116:16
+      1  100.0%          LazyCompile: ~dispatch /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/route.js:98:45
+      1  100.0%            Function: ^handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1    2.9%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%      Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%        Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    2.9%    LazyCompile: ~toSQL /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/schema/compiler.js:93:8
+      1  100.0%      LazyCompile: ~toSQL /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/schema/builder.js:35:8
+      1  100.0%        LazyCompile: ~ensureConnectionCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:1:34
+      1  100.0%          LazyCompile: ~ensureConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/runner.js:275:25
+      1  100.0%            T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1    2.9%    LazyCompile: ~setCharset /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/utils.js:248:41
+      1  100.0%      LazyCompile: ~send /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/response.js:111:25
+      1  100.0%        LazyCompile: ~json /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/response.js:250:25
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/routers/api/info/info.js:28:17
+      1  100.0%            LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1    2.9%    LazyCompile: ~resume_ node:internal/streams/readable:996:17
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    2.9%    LazyCompile: ~read /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1  100.0%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    2.9%    LazyCompile: ~parserOnIncoming node:_http_server:968:26
+      1  100.0%      LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    2.9%    LazyCompile: ~getSetGlobalLocale /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/moment/moment.js:2116:32
+      1  100.0%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/moment/moment.js:11:19
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/moment/moment.js:7:12
+      1  100.0%          Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/moment/moment.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    2.9%    LazyCompile: ~fromOptions /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/write_concern.js:40:23
+      1  100.0%      LazyCompile: ~Transaction /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/transactions.js:57:16
+      1  100.0%        LazyCompile: ~ClientSession /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:46:16
+      1  100.0%          LazyCompile: ~startSession /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:240:17
+      1  100.0%            LazyCompile: ~executeOperationAsync /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+      1    2.9%    LazyCompile: ~fromObject node:buffer:500:20
+      1  100.0%      Function: ^from node:buffer:301:28
+      1  100.0%        LazyCompile: ~xor /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:208:13
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    2.9%    LazyCompile: ~deserialize /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%      LazyCompile: ~deserialize /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/bson.js:161:21
+      1  100.0%        LazyCompile: ~parse /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1  100.0%          LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1    2.9%    LazyCompile: ~createHash node:crypto:132:20
+      1  100.0%      LazyCompile: ~hash /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:596:14
+      1  100.0%        LazyCompile: ~generate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:363:22
+      1  100.0%          LazyCompile: ~session /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express-session/index.js:179:26
+      1  100.0%            LazyCompile: ~handle /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/express/lib/router/layer.js:86:49
+      1    2.9%    LazyCompile: ~checkServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      1  100.0%        LazyCompile: ~MonitorInterval._executeAndReschedule /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/monitor.js:337:38
+      1  100.0%          LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%            LazyCompile: ~processTimers node:internal/timers:492:25
+      1    2.9%    LazyCompile: ~callback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:31
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:44
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:152:83
+      1  100.0%          LazyCompile: ~onMessage /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:156:14
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:60:44
+      1    2.9%    LazyCompile: ~callback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1  100.0%      LazyCompile: ~connectHandler /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:313:28
+      1  100.0%        Function: ^onceWrapper node:events:622:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            LazyCompile: ~onConnectSecure node:_tls_wrap:1524:25
+      1    2.9%    LazyCompile: ~Topology /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/sdam/topology.js:40:16
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:114:43
+      1  100.0%        LazyCompile: ~maybeCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/utils.js:336:23
+      1  100.0%          LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:110:12
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:234:43
+      1    2.9%    LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/aproba/index.js:52:39
+      1  100.0%      T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%        LazyCompile: ~validate /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/aproba/index.js:25:19
+      1  100.0%          LazyCompile: ~module.exports /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/gauge/plumbing.js:6:42
+      1  100.0%            LazyCompile: ~Gauge /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/gauge/index.js:19:16
+      1    2.9%    Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/debug/src/node.js:1:1
+      1  100.0%      LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+
+     31    1.6%  UNKNOWN
+     16   51.6%    LazyCompile: *compileFunction node:vm:316:25
+     16  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+     16  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+     16  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     13   81.3%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      3   18.8%            LazyCompile: *Module._load node:internal/modules/cjs/loader:807:24
+      2    6.5%    Function: ^handleErrorFromBinding node:internal/fs/utils:344:32
+      2  100.0%      Function: ^readSync node:fs:705:18
+      2  100.0%        Function: ^tryReadSync node:fs:444:21
+      2  100.0%          Function: ^readFileSync node:fs:465:22
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.2%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%      T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.2%    LazyCompile: ~realpathSync node:fs:2474:22
+      1  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    3.2%    LazyCompile: ~processIncomingData /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1  100.0%      LazyCompile: ~_write /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/message_stream.js:31:11
+      1  100.0%        LazyCompile: ~writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%          LazyCompile: ~_write node:internal/streams/writable:286:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+      1    3.2%    LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.2%    LazyCompile: ~maxWireVersion /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/utils.js:372:24
+      1  100.0%      Function: ^supportsOpMsg /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:385:23
+      1  100.0%        LazyCompile: ~command /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:251:12
+      1  100.0%          LazyCompile: ~checkServer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      1    3.2%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.2%    LazyCompile: ~createAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:74:24
+      1  100.0%      LazyCompile: ~getAppender /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:59:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:139:41
+      1  100.0%          T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%            LazyCompile: ~setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/appenders/index.js:128:15
+      1    3.2%    LazyCompile: ~addListener /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/configuration.js:17:21
+      1  100.0%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/levels.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.2%    LazyCompile: ~WriteStream /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/graceful-fs/graceful-fs.js:320:24
+      1  100.0%      LazyCompile: ~createWriteStream /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/graceful-fs/graceful-fs.js:344:30
+      1  100.0%        LazyCompile: ~_renewWriteStream /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/streamroller/lib/RollingFileWriteStream.js:261:20
+      1  100.0%          LazyCompile: ~RollingFileWriteStream /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/streamroller/lib/RollingFileWriteStream.js:40:14
+      1  100.0%            LazyCompile: ~RollingFileStream /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1    3.2%    LazyCompile: ~SocketAddress node:internal/socketaddress:47:14
+      1  100.0%      LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1    3.2%    LazyCompile: ~MongoContainer /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/containers/Mongodb.container.js:8:14
+      1  100.0%      LazyCompile: ~UsersDao /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/models/daos/Users.daos.js:10:16
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/middlewares/passport.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.2%    LazyCompile: *resolve node:path:1091:10
+      1  100.0%      LazyCompile: *realpathSync node:fs:2474:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1    3.2%    Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+
+     27    1.4%  /usr/lib/system/libsystem_malloc.dylib
+     10   37.0%    T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      2   20.0%      T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1   50.0%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1   50.0%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      2   20.0%      LazyCompile: *realpathSync node:fs:2474:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:440:20
+      1   50.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      1   10.0%      LazyCompile: ~get hasDataBearingServers /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:230:30
+      1  100.0%        LazyCompile: ~shouldCheckForSessionSupport /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:304:33
+      1  100.0%          LazyCompile: ~executeOperationAsync /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:15:37
+      1  100.0%            LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:12:39
+      1   10.0%      LazyCompile: ~_query /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/dialects/sqlite3/index.js:121:9
+      1  100.0%        LazyCompile: ~executeQuery /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/internal/query-executioner.js:36:22
+      1  100.0%          LazyCompile: ~query /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/client.js:144:8
+      1  100.0%            LazyCompile: ~query /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/knex/lib/execution/runner.js:111:14
+      1   10.0%      LazyCompile: ~Connection.openUri /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/connection.js:680:40
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/index.js:411:49
+      1  100.0%          LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/promiseOrCallback.js:40:22
+      1  100.0%            T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1   10.0%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:368:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1   10.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1   10.0%      Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:1053:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:102:31
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/semver/ranges/outside.js:1:1
+      1    3.7%    LazyCompile: ~slowCases node:internal/util:168:19
+      1  100.0%      Function: ^normalizeEncoding node:internal/util:163:27
+      1  100.0%        Function: ^isEncoding node:buffer:535:40
+      1  100.0%          Function: ^_write node:internal/streams/writable:286:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+      1    3.7%    LazyCompile: ~parseOptions /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/connection_string.js:195:22
+      1  100.0%      LazyCompile: ~MongoClient /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:43:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:234:43
+      1  100.0%          LazyCompile: ~maybeCallback /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/utils.js:336:23
+      1  100.0%            LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/mongo_client.js:227:19
+      1    3.7%    LazyCompile: ~parseHostName /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/url-state-machine.js:773:65
+      1  100.0%      Function: ^URLStateMachine /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/url-state-machine.js:481:25
+      1  100.0%        LazyCompile: ~module.exports.basicURLParse /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/url-state-machine.js:1206:41
+      1  100.0%          LazyCompile: ~URLImpl /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/URL-impl.js:7:14
+      1  100.0%            LazyCompile: ~exports.setup /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/URL.js:49:17
+      1    3.7%    LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%      LazyCompile: ~TLSSocket node:_tls_wrap:469:19
+      1  100.0%        LazyCompile: ~connect node:_tls_wrap:1605:35
+      1  100.0%          LazyCompile: ~makeConnection /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%            LazyCompile: ~connect /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    3.7%    LazyCompile: ~formatRaw node:internal/util/inspect:844:19
+      1  100.0%      LazyCompile: ~formatValue node:internal/util/inspect:766:21
+      1  100.0%        LazyCompile: ~inspect node:internal/util/inspect:310:17
+      1  100.0%          Function: ^formatWithOptionsInternal node:internal/util/inspect:2154:35
+      1  100.0%            Function: ^formatWithOptions node:internal/util/inspect:2133:27
+      1    3.7%    LazyCompile: ~debug /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/node_modules/debug/src/common.js:66:17
+      1  100.0%      LazyCompile: ~_log /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/logger.js:163:7
+      1  100.0%        LazyCompile: ~log /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/logger.js:139:6
+      1  100.0%          LazyCompile: ~Logger.<computed> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/log4js/lib/logger.js:234:44
+      1  100.0%            Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/index.js:1:1
+      1    3.7%    LazyCompile: ~__extends /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/timestamp.js:9:21
+      1  100.0%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/timestamp.js:27:41
+      1  100.0%        Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/bson/lib/timestamp.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1    3.7%    LazyCompile: ~Kareem.createWrapper /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/kareem/index.js:420:42
+      1  100.0%      LazyCompile: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:64:13
+      1  100.0%        T node::contextify::CompiledFnEntry::~CompiledFnEntry()
+      1  100.0%          LazyCompile: ~applyQueryMiddleware /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:27:30
+      1  100.0%            LazyCompile: ~compile /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/mongoose/lib/model.js:5013:33
+      1    3.7%    LazyCompile: ~GetIntrinsic /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%      Function: ~<anonymous> /Users/mayrariccardi/Desktop/BACKEND/Backend-Desafios-2/DESAFIO 14/node_modules/call-bind/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.7%    LazyCompile: *compileFunction node:vm:316:25
+      1  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1025:33
+      1    3.7%    Function: ^emitAfterScript node:internal/async_hooks:517:25
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+

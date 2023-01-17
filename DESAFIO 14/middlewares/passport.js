@@ -7,11 +7,11 @@ const UsersDao = require('../models/daos/Users.daos');
 const { formatUserForDB } = require('../utils/users.utils');
 
 const User = new UsersDao();
-/* UsersDao.connect(`mongodb+srv://mayricca5:${envConfig.DB_PASSWORD}@youneedsushi.nuk3cgy.mongodb.net/users?retryWrites=true&w=majority`) */
+UsersDao.connect(`mongodb+srv://mayricca5:${envConfig.DB_PASSWORD}@youneedsushi.nuk3cgy.mongodb.net/users?retryWrites=true&w=majority`)
 
 const salt = () => bcrypt.genSaltSync(10);
-/* const createHash = (password) => bcrypt.hashSync(password, salt());
-const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password); */
+const createHash = (password) => bcrypt.hashSync(password, salt());
+const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password);
 
 // Passport Local Strategy
 
@@ -42,16 +42,7 @@ passport.use('signup', new LocalStrategy({
   
   // sign in
   passport.use('signin', new LocalStrategy( async (username, password, done) => {
-    const user = await User.getByEmail(username);
-    try{
-      console.log('Me llega el usuario  OK' + user)
-      if (user){
-        return done(null, user);
-       }
-      }
-      //!OJO REVISAR POR QUE NO ME FUNCIONA BCRYPT Y CHEQUEAR AUTENTICACION 
-      //!DE CONTRASEÑA!
-    /* try {
+    try {
       const user = await User.getByEmail(username);
       console.log(user)
       if (!isValidPassword(user, password)) {
@@ -59,7 +50,7 @@ passport.use('signup', new LocalStrategy({
         return done(null, false);
       }
       return done(null, user);
-    } */
+    }
     catch(error) {
       console.log("Error signing in...");
       return done(error);
