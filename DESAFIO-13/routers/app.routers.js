@@ -15,11 +15,15 @@ router.get('/', async(req, res) => {
   res.sendFile('login.html', {root: 'public'})
 })
 
-router.get('/login', async(req, res) => {
+router.get('/login.html', async(req, res) => {
   res.sendFile('login.html', {root: 'public'})
 })//! ESTE GET ES REITERATIVO CON EL HOME, VER DESPUES SI SE DEJA O NO!
 
-router.get('/register', async(req, res) => {
+/* router.get('/register', async(req, res) => {
+  res.sendFile('signup.html', {root: 'public'})
+}) */
+
+router.get('/signup.html', async(req, res) => {
   res.sendFile('signup.html', {root: 'public'})
 })
 

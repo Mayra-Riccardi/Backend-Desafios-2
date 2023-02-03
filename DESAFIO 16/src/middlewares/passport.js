@@ -7,7 +7,7 @@ const UsersDao = require('../models/daos/Users.daos');
 const { formatUserForDB } = require('../utils/users.utils');
 
 const User = new UsersDao();
-/* UsersDao.connect(`mongodb+srv://mayricca5:${envConfig.DB_PASSWORD}@youneedsushi.nuk3cgy.mongodb.net/users?retryWrites=true&w=majority`) */
+UsersDao.connect(`mongodb+srv://mayricca5:${envConfig.DB_PASSWORD}@youneedsushi.nuk3cgy.mongodb.net/users?retryWrites=true&w=majority`)
 
 const salt = () => bcrypt.genSaltSync(10);
 const createHash = (password) => bcrypt.hashSync(password, salt());
